@@ -1,0 +1,21 @@
+div {
+	text-align: center;
+  }
+.btn {
+	font-size: 20px;
+	width: 200px;
+	height: 120px;
+	flex-shrink: 0;
+	background: var(--color);
+	cursor: pointer;
+	border-radius: 20px;
+	border: var(--color);
+	margin-left: 100px;
+   	margin-top: 275px; 
+	font-family: arial;
+	font-size: 25px;
+}
+.btn-1 {--color:#FF0C0C;}
+.btn-2 {--color:#2DE84B;}
+.btn-3 {--color:#1B70F0;}
+.btn-4 {--color:#FFF849;}
