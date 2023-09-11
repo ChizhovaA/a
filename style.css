@@ -1,19 +1,24 @@
-div {
+body{
+	background: #F5F5F5;
+}
+div{
 	text-align: center;
-  }
+}
 .btn {
-	font-size: 20px;
 	width: 200px;
-	height: 120px;
+	height: 80px;
 	flex-shrink: 0;
 	background: var(--color);
 	cursor: pointer;
 	border-radius: 20px;
 	border: var(--color);
 	margin-left: 100px;
-   	margin-top: 275px; 
+   	margin-top: 310px;
 	font-family: arial;
 	font-size: 25px;
+}
+.btn.active{
+	background:#F5F5F5;
 }
 .btn-1 {--color:#FF0C0C;}
 .btn-2 {--color:#2DE84B;}

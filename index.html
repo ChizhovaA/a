@@ -7,25 +7,22 @@
 	</head>
     <body>
         <div>
-            <button class="btn btn-1"> RED </button>
-            <button class="btn btn-2"> GREEN </button>
-            <button class="btn btn-3"> BLUE </button>
-            <button class="btn btn-4"> YELLOW </button>
+            <button class="btn btn-1" onclick = "color(this)"> RED </button>
+            <button class="btn btn-2" onclick = "color(this)"> GREEN </button>
+            <button class="btn btn-3" onclick = "color(this)"> BLUE </button>
+            <button class="btn btn-4" onclick = "color(this)"> YELLOW </button>
+        </div>
 
             <script>
-                let btns = document.getElementsByClassName("btn");
-                for(let i = 0; i < btns.length; i++)
-                {
-                    btns[i].addEventListener("click", function(){
-                        
-                        let buttonStyle = getComputedStyle(this);
-                        let buttonBgColor = buttonStyle['backgroundColor'];
-                        document.body.style.backgroundColor = buttonBgColor;
-                        this.style.background = "#F5F5F5";
-                    });
+            
+                function color(element){
+                    let buttonStyle = getComputedStyle(element);
+                    let buttonBgColor = buttonStyle.backgroundColor;
+                    document.body.style.backgroundColor = buttonBgColor;
+                    element.classList.toggle("active");    
                 }
+
             </script>
-        </div>
 
        </body>
 </html>
