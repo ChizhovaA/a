@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ЛАБОРАТОРНАЯ РАБОТА</title>
+        <link rel="stylesheet" href="style (1).css">
+  </head>
+    <body>
+        <div>
+            <button class="btn btn-1" onclick = "color(this, 'click')" > RED </button>
+            <button class="btn btn-2" onclick = "color(this, 'click')" > GREEN </button>
+            <button class="btn btn-3" onclick = "color(this, 'click')" > BLUE </button>
+            <button class="btn btn-4" onclick = "color(this, 'click')" > YELLOW </button>
+        </div>
+
+
+        
+            <script>
+              function color(element, click){
+                  let buttonStyle = getComputedStyle(element);
+                  let buttonBgColor = buttonStyle.backgroundColor;
+                  let buttons = document.querySelectorAll('.btn');  // находим все элементы класса btn
+                  if (element.classList.contains('active')) {
+                    element.classList.remove('active');
+                    document.body.style.backgroundColor = '#F5F5F5';
+                  }
+                  else {
+                    document.body.style.backgroundColor = buttonBgColor;
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    element.classList.add('active');  
+                  }
+                  // Создание объекта с данными пользователя
+                  var logEntry = {
+                    Date: new Date().toLocaleDateString(),// Получаем текущую дату и время
+                    Time: new Date().toLocaleTimeString().slice(0,-3),
+                    Action: click + ' on the ' + buttonBgColor + ' button'
+                  };
+                   //let response = fetch('DB.json');
+                   /*fetch('DB.json').then(response => response.json()).then(data => {data.entries.push(logEntry);// Добавляем новую запись в массив
+                    const upDated = JSON.stringify(data);
+                    console.log(upDated);
+                  });*/
+                  /*var logData = JSON.parse(localStorage.getItem('UserAction'));// Получаем ранее сохраненные данные || [];
+                  logData.push(logEntry);// Добавляем новую запись в массив
+                  localStorage.setItem('UserAction', JSON.stringify(logData));// Сохраняем массив обратно в локальное хранилище*/
+                  
+                }
+                  
+                /*function UserAction(action) {
+                  
+                
+                }*/
+
+            </script>
+
+       </body>
+</html>
