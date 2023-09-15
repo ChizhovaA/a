@@ -1,0 +1,32 @@
+body{
+  background: #F5F5F5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div{
+  text-align: center;
+}
+.btn {
+  width: 15vw;
+  height: 5vw;
+  flex-shrink: 0;
+  background: var(--color);
+  cursor: pointer;
+  border-radius: 20px;
+  border: var(--color);
+  margin-left: 5vw;
+  font-family: arial;
+  font-size: 25px;
+  color: #000000;
+}
+.btn.active{
+  background:#F5F5F5;
+}
+.btn-1 {--color:#FF0C0C;}
+.btn-2 {--color:#2DE84B;}
+.btn-3 {--color:#1B70F0;}
+.btn-4 {--color:#FFF849;}
+
+
