@@ -45,7 +45,9 @@ body{
     gap: 10px;
   }
   .btn{
-    font-size: 9px;
+    font-size: 12px;
+    width: 16vw;
+    height: 8vw;
   }
 }
 @media (max-width: 360px){
@@ -55,6 +57,8 @@ body{
   }
   .btn{
     font-size: 6px;
+    width: 16vw;
+    height: 8vw;
   }
 }
 
