@@ -4,19 +4,38 @@
     <meta charset = "utf-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
     <title>LAB WORK</title>
-    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "/css/index.css">
   </head>
-    <body>
-        <div class="block">
-            <button class = "btn btn-1" onclick = "color(this)" data-id=""> RED </button>
-            <button class = "btn btn-2" onclick = "color(this)" > GREEN </button>
-            <button class = "btn btn-3" onclick = "color(this)" > BLUE </button>
-            <button class = "btn btn-4" onclick = "color(this)" > YELLOW </button>
-        </div>
-        <script src="script.js"></script>
-            
-       </body>
+  <body>
+    <div class="container"><button class="btn-dropdown" id="action">Action</button>
+    <table id="tbl" class="disp">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Time</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    </div>
+    <div class="block disp">
+        <button class = "btn btn-1" onclick = "color(this)" id="red"> RED </button>
+        <button class = "btn btn-2" onclick = "color(this)" id="green"> GREEN </button>
+        <button class = "btn btn-3" onclick = "color(this)" id="blue"> BLUE </button>
+        <button class = "btn btn-4" onclick = "color(this)" id="yellow"> YELLOW </button>
+    </div>
+    <script src="/js/switchColor.js"></script>
+    <script src="/js/pop-up.js"></script>
+    <script type="module" src="/js/action.js"></script>
+    <script src="/js/dropDownTable.js"></script>
+  </body>
 </html>
+
+
+
+
 
 
 
